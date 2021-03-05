@@ -47,6 +47,7 @@ header{
     width:100%;
     height: 90px;
     padding-top:50px;
+    z-index: 9999999;
 }
 ul{
     padding:0;
@@ -561,59 +562,16 @@ background-color:#DBDBDB ;
     .hero{
         padding:20px 0;
     }
+header{
+    padding-top:0;
+    height: auto;
+    left:0;
+    right:0;
+}
+.scrollNav{
+    height: auto;
+}
 
-    
-    .idea{
-        padding:50px 0;
-    }
-    .subscribeBox .subscribeBtn{
-        width:100%;
-    }
-    .contactBtn{
-        width:100%;
-    float: none;
-    }
-    .ideaTitle span{
-        padding:0;
-    }
-.ideaTitle{
-    width:100%;
-}
-.solBox.margin{
-    position: relative;
-    top:auto
-}
-.statistCircle{
-    width:120px;
-    height:120px;
-    position: relative;
-}
-.solutions{
-    padding-bottom: 50px;;
-}
-.statistCircle.yellow{
-    top: 14px;;
-    right: 100px;
-}
-.statistCircle.blue2 {
-    background-color: rgba(24, 13, 164, .8);
-    top: -149px;
-    right: 0;
-}
-.statistCircle.blue {
-    background-color: rgba(100, 169, 255, .8);
-    right: 192px;
-    top: 100px;
-}
-.ourTeam{
-padding:50px 0;
-}
-.partners{
-    padding:50px 0;
-}
-.footersec{
-    text-align: center !important;
-}
     .navbar-expand-lg .navbar-nav .nav-link:before{
         display:none;
     }
@@ -621,15 +579,6 @@ padding:50px 0;
     .contactForm{
         margin-top:50px;
     }
-
-
-.sendBtn ,.sendMessage.btn{
-    width:100%;
-}
-.services .container{
-    padding:0 15px;
-    
-}
 .startIcon:before{
     display: none;
 }
@@ -672,7 +621,9 @@ padding:50px 0;
     .mobileMenu i:last-child{
     margin-bottom: 0;;
     }
-
+.heroBG{
+    display: none;
+}
     .navbar{
         width:100%;
         margin-bottom:20px;
@@ -685,22 +636,64 @@ padding:50px 0;
         width:100%;
         margin-top:20px;
     }
-    .heroSection{
-        padding-top: 50px;;
-    }
-    .start {
-        padding-top: 50px;
-        padding-bottom: 50px;}
-.create {
-    padding-top: 50px;
-    padding-bottom:50px;
-}
-.contactForm .form-group.halfFormGroup{
-    width:100%;
-}
 .contactUs {
     padding: 50px 0;}
-
+.aboutImg{
+    height: auto;
+    margin: 10px auto;
+}
+.heroImg{
+    width:100%;
+    height:auto;
+    margin:20px auto;
+}
+.exp {
+    padding:50px 0;
+}
+.about{
+    padding:50px 0;
+}
+.btn{
+    width: 100%;;
+}
+.work{
+    padding-top:50px;
+}
+.galleryItem{
+    width:100% !important;
+}
+.clients{
+    padding:50px 0;
+}
+.carousel-inner{
+    margin-top:20px;
+    padding:0;
+}
+.carousel-inner i{
+    margin:10px 0;
+}
+.clientsBG{
+    display: none;
+}
+.carousel-indicators{
+    left:0;
+    right:0;
+    bottom:-10%;
+}
+.footerMenu li{
+    margin:0 10px;
+}
+.galleryItem:hover{
+transform: none;}
+.carousel-inner p{
+    height: auto;
+    max-height: auto;;
+}
+.navbar-collapse{
+    background-color: white;
+    width:100%;
+    ;
+}
 }
 @media(min-width:768px) and (max-width:1023px){
     .navbar-expand-lg .navbar-nav{
@@ -710,16 +703,9 @@ padding:50px 0;
         font-size:14px
     }
 
-    .statistCircle{
-        width:150px;
-        height: 150px;;
-    }
-    .statistCircle.blue {
-        right: 179px;}
-        .statistCircle.yellow {
-            top: 63px;
-            right: 110px;}
-
+.galleryItem {
+    width:50%;
+}
 footer{
     padding:20px 0;
 }
@@ -734,19 +720,19 @@ footer{
     }
     .socialIcons li{
         float: none;
+        width:30px;
+        height:30px;
     }
-
+    .socialIcons li a {
+        font-size: 14px;;
+    }
+    .socialIcons li i{
+        line-height:24px;
+    }
     .heroText{
         margin-top: 20px;
     }
 
-    .subscribeBtn{
-        width:140px;
-    }
-
-    .marginForm{
-        margin-left:24px;
-    }
     .navbar-expand-lg .navbar-collapse{
         display: flex;
         flex-basis: auto;
@@ -763,17 +749,9 @@ footer{
         padding-top: 50px;;
     }
    
-.contactForm .form-group.halfFormGroup{
-    width:100%;
-}
 .contactUs {
     padding: 50px 0;}
-.ourTeam{
-    padding:50px 0;
-}
-.partners{
-    padding:30px 0;
-}
+
          .navbar-nav {
             display: -ms-flexbox;
             display: flex;}
@@ -783,7 +761,6 @@ footer{
             }
             .navbar-brand.logo{
                 margin-left:0;
-                margin-right:100px;
                 color:var(--main-color)
             }
             .subscribeBox .form-control{
@@ -793,10 +770,52 @@ footer{
             .subscribeBox .subscribeBtn{
                 width:100px;
             }
-.idea{
-    padding-bottom:50px;
-}.solBox.margin{
-    position: relative;
-    top:0;
+header{
+    padding-top:0;
+}
+.navbar-brand.logo{
+    width:50px;
+    margin-left:50px;
+}
+.scrollNav .navbar-brand.logo{
+    width:50px;
+}
+.scrollNav{
+    padding:10px 0;
+    height: 90px;
+    padding-top: 0;;
+}
+.aboutImg{
+    height: auto;;
+}
+.about{
+    padding:20px 0;
+}
+.exp{
+    padding:20px 0
+}
+.work{
+    padding-top:50px ;
+}
+.clients{
+    padding:50px 0;
+}
+.carousel-inner i{
+    margin-bottom:20px;
+}
+.carousel-inner{
+    margin-top:50px;
+}
+.sectionTitle h4{
+    font-size: 3em;
+}
+.sectionTitle{
+    margin-bottom:10px;
 }
         }
+
+@media(max-width:1200px){
+.galleryItem {
+    width:50%;
+}
+}
